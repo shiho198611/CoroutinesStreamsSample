@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/funcSelFragment">
+
+
+    <fragment
+        android:id="@+id/funcSelFragment"
+        android:name="com.sample.coroutinesstreamssample.FuncSelFragment"
+        android:label="FuncSelFragment">
+        <action
+            android:id="@+id/action_funcSelFragment_to_errorResumeLikeFragment"
+            app:destination="@id/errorResumeLikeFragment" />
+        <action
+            android:id="@+id/action_funcSelFragment_to_mergeLikeFragment"
+            app:destination="@id/mergeLikeFragment" />
+        <action
+            android:id="@+id/action_funcSelFragment_to_shareLikeTestFragment"
+            app:destination="@id/shareLikeTestFragment" />
+        <action
+            android:id="@+id/action_funcSelFragment_to_subjectLikeTestFragment"
+            app:destination="@id/subjectLikeTestFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/errorResumeLikeFragment"
+        android:name="com.sample.coroutinesstreamssample.errorresumelike.ErrorResumeLikeFragment"
+        android:label="ErrorResumeLikeFragment" />
+    <fragment
+        android:id="@+id/mergeLikeFragment"
+        android:name="com.sample.coroutinesstreamssample.mergelike.MergeLikeFragment"
+        android:label="MergeLikeFragment" />
+    <fragment
+        android:id="@+id/shareLikeTestFragment"
+        android:name="com.sample.coroutinesstreamssample.sharelike.ShareLikeTestFragment"
+        android:label="ShareLikeTestFragment" />
+    <fragment
+        android:id="@+id/subjectLikeTestFragment"
+        android:name="com.sample.coroutinesstreamssample.subjectlike.SubjectLikeTestFragment"
+        android:label="SubjectLikeTestFragment" />
+</navigation>
